@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="$TXRPL: Rewarding Patriots with Silver on XRPL">
+    <title>$TXRPL - Silver-Backed Freedom</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Oswald', sans-serif;
+        }
+
+        body {
+            background: #1a1a1a;
+            color: #fff;
+        }
+
+        /* Mobile-First Navigation */
+        nav {
+            background: #b22222;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin: 0 0.5rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://via.placeholder.com/1200x600?text=American+Flag+Silver') no-repeat center/cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 2rem;
+            text-shadow: 2px 2px #000;
+            color: #fff;
+        }
+
+        .hero p {
+            font-size: 1rem;
+            margin: 1rem 0;
+            color: #ddd;
+            font-family: 'Roboto Mono', monospace;
+        }
+
+        .cta-button {
+            background: #0047ab;
+            color: #fff;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: background 0.3s;
+        }
+
+        .cta-button:hover {
+            background: #003087;
+        }
+
+        /* Counter (Debt Clock Style) */
+        .counter {
+            background: #000;
+            padding: 1rem;
+            text-align: center;
+            font-family: 'Roboto Mono', monospace;
+        }
+
+        .counter h2 {
+            font-size: 1.5rem;
+            color: #b22222;
+        }
+
+        .counter p {
+            font-size: 1.2rem;
+            color: #fff;
+        }
+
+        /* Sections */
+        section {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: #b22222;
+        }
+
+        section p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .social-links a, .dex-links a {
+            color: #0047ab;
+            text-decoration: none;
+            margin: 0 0.5rem;
+            font-size: 1rem;
+        }
+
+        /* Flicker Animation for Conspiracy Vibe */
+        @keyframes flicker {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        .flicker-text {
+            animation: flicker 2s infinite;
+            font-family: 'Roboto Mono', monospace;
+        }
+
+        /* Mobile-First Media Queries */
+        @media (min-width: 768px) {
+            .hero h1 {
+                font-size: 3.5rem;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+            }
+
+            nav ul li a {
+                font-size: 1.2rem;
+            }
+
+            .counter h2 {
+                font-size: 2rem;
+            }
+
+            .counter p {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#rewards">Rewards</a></li>
+            <li><a href="#giveaway">Giveaway</a></li>
+            <li><a href="#trade">Trade</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero" id="home">
+        <h1>$TXRPL: Silver-Backed Freedom</h1>
+        <p class="flicker-text">Hold 3M $TXRPL. Win Silver. Join the Patriot Revolution.</p>
+        <a href="#giveaway" class="cta-button">Enter the Giveaway</a>
+    </section>
+
+    <section class="counter">
+        <h2>Silver Rewarded to Holders</h2>
+        <p id="silver-counter">0 oz</p>
+        <p class="flicker-text">The Truth Awaits...</p>
+    </section>
+
+    <section id="about">
+        <h2>About $TXRPL</h2>
+        <p>$TXRPL is a token on the XRP Ledger rewarding patriots with physical silver. Break free from the system and join the #SilverSqueeze.</p>
+    </section>
+
+    <section id="rewards">
+        <h2>Silver Rewards</h2>
+        <p>Hold $TXRPL to participate in our monthly silver giveaways. Stay tuned for more ways to earn silver on XRPL.</p>
+    </section>
+
+    <section id="giveaway">
+        <h2>Monthly Silver Giveaway</h2>
+        <p>Join our monthly giveaway by holding 3 million $TXRPL tokens. Follow <a href="https://x.com/texasxrpl">@texasxrpl</a> for updates and winner announcements.</p>
+        <a href="https://x.com/Texasxrpl/status/123456789" class="cta-button">Learn More</a>
+    </section>
+
+    <section id="trade">
+        <h2>Trade $TXRPL</h2>
+        <p>Get $TXRPL on top XRPL DEX platforms.</p>
+        <div class="dex-links">
+            <a href="https://dexscreener.com/xrpl/545852504c000000000000000000000000000000.rhgfaghm996wlgyb9qrqx1rjhjtvbvchku_xrp">Dexscreener</a>
+            <a href="https://firstledger.net/token/rhGFAGHm996WLGYb9QRqx1rJhJTvBvChkU/545852504C000000000000000000000000000000">First Ledger</a>
+        </div>
+    </section>
+
+    <section id="community">
+        <h2>Join the Community</h2>
+        <p>Follow us and stay updated.</p>
+        <div class="social-links">
+            <a href="https://x.com/texasxrpl">@texasxrpl</a>
+            <a href="https://linktr.ee/TXRPL">Linktree</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 $TXRPL. Powered by XRPL. #SilverSqueeze</p>
+    </footer>
+
+    <script>
+        // Placeholder for silver counter (update with real data)
+        let silver = 0;
+        setInterval(() => {
+            silver += 10; // Placeholder increment
+            document.getElementById('silver-counter').textContent = `${silver} oz`;
+        }, 5000);
+    </script>
+</body>
+</html>
