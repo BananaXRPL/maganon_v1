@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="$TXRPL: Silver-Backed Revolution on XRPL">
-    <meta name="keywords" content="$TXRPL, silver, XRPL, precious metals, patriot, freedom">
+    <meta name="keywords" content="$TXRPL, silver, XRPL, precious metals, patriot, freedom, #SilverSqueeze">
     <title>$TXRPL - The Silver Uprising</title>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
     <style>
@@ -57,7 +57,7 @@
 
         /* Hero Section */
         .hero {
-            background: url('https://via.placeholder.com/1200x600?text=Flag+Silver+Vault') no-repeat center/cover;
+            background: url('images/flag-silver-vault.png') no-repeat center/cover;
             height: 100vh;
             display: flex;
             flex-direction: column;
@@ -92,6 +92,7 @@
             transition: background 0.3s;
             min-width: 44px;
             min-height: 44px;
+            display: inline-block;
         }
 
         .cta-button:hover {
@@ -131,7 +132,7 @@
         .silver-coin {
             width: 100px;
             height: 100px;
-            background: url('https://via.placeholder.com/100?text=$TXRPL+Coin') no-repeat center/cover;
+            background: url('images/silver-coin.png') no-repeat center/cover;
             animation: spin 5s linear infinite;
             margin: 1rem auto;
         }
@@ -179,6 +180,12 @@
             font-size: 1rem;
         }
 
+        .dex-links img {
+            height: 30px;
+            vertical-align: middle;
+            margin: 0 0.5rem;
+        }
+
         /* NFT Gallery */
         .nft-gallery {
             display: flex;
@@ -190,7 +197,7 @@
         .nft-card {
             width: 150px;
             height: 150px;
-            background: url('https://via.placeholder.com/150?text=Silver+NFT') no-repeat center/cover;
+            background: url('images/silver-nft.png') no-repeat center/cover;
             border: 2px solid var(--silver);
             border-radius: 10px;
             transition: transform 0.3s;
@@ -215,6 +222,52 @@
             border-radius: 5px;
         }
 
+        /* How to Buy & FAQ Dropdowns */
+        .accordion {
+            margin: 1rem 0;
+        }
+
+        .accordion-item {
+            border-bottom: 1px solid var(--silver);
+        }
+
+        .accordion-header {
+            background: var(--blue);
+            color: var(--white);
+            padding: 1rem;
+            cursor: pointer;
+            font-size: 1.1rem;
+            transition: background 0.3s;
+            position: relative;
+        }
+
+        .accordion-header:hover {
+            background: #003087;
+        }
+
+        .accordion-header::after {
+            content: '▼';
+            position: absolute;
+            right: 1rem;
+            font-size: 0.8rem;
+        }
+
+        .accordion-content {
+            display: none;
+            background: #2a2a2a;
+            padding: 1rem;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        .accordion-item.active .accordion-content {
+            display: block;
+        }
+
+        .accordion-item.active .accordion-header::after {
+            content: '▲';
+        }
+
         /* Mobile-First Media Queries */
         @media (min-width: 768px) {
             .hero h1 {
@@ -236,6 +289,14 @@
             .counter p {
                 font-size: 1.5rem;
             }
+
+            .accordion-header {
+                font-size: 1.2rem;
+            }
+
+            .accordion-content {
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
@@ -244,11 +305,13 @@
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#how-to-buy">How to Buy</a></li>
             <li><a href="#rewards">Rewards</a></li>
             <li><a href="#giveaway">Giveaway</a></li>
             <li><a href="#trade">Trade</a></li>
             <li><a href="#nfts">NFTs</a></li>
             <li><a href="#quests">Quests</a></li>
+            <li><a href="#faq">FAQ</a></li>
         </ul>
     </nav>
 
@@ -272,6 +335,48 @@
         <p>Crafted by MAGANON7 on the XRP Ledger, $TXRPL is a rebellion against fiat lies. Silver, the metal of truth, flows to patriots who hold. Join the #SilverSqueeze and see beyond the veil.</p>
     </section>
 
+    <section id="how-to-buy">
+        <h2>How to Buy $TXRPL</h2>
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-header">Step 1: Create a Wallet</div>
+                <div class="accordion-content">
+                    <p>Download a secure XRPL wallet to store your $TXRPL. We recommend:</p>
+                    <ul>
+                        <li><strong>First Ledger</strong>: Available on iOS/Android. <a href="https://firstledger.net/" class="social-links">Get First Ledger</a></li>
+                        <li><strong>Xaman</strong>: Trusted XRPL wallet (formerly Xumm). <a href="https://xaman.app/" class="social-links">Get Xaman</a></li>
+                    </ul>
+                    <p>Follow the app’s setup to create and back up your wallet securely.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">Step 2: Fund Your Wallet</div>
+                <div class="accordion-content">
+                    <p>Buy XRP on an exchange (e.g., Coinbase, Binance) and send it to your wallet’s XRP address. Ensure you have enough XRP to cover transaction fees (10 XRP reserve).</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">Step 3: Trade on a DEX</div>
+                <div class="accordion-content">
+                    <p>Visit a supported XRPL DEX to swap XRP for $TXRPL:</p>
+                    <ul>
+                        <li>First Ledger: <a href="https://firstledger.net/token/rhGFAGHm996WLGYb9QRqx1rJhJTvBvChkU/545852504C000000000000000000000000000000" class="social-links">Trade</a></li>
+                        <li>Dexscreener: <a href="https://dexscreener.com/xrpl/545852504c000000000000000000000000000000.rhgfaghm996wlgyb9qrqx1rjhjtvbvchku_xrp" class="social-links">Trade</a></li>
+                        <li>XMagnetic: <a href="https://xmagnetic.org/tokens/TXRPL+rhGFAGHm996WLGYb9QRqx1rJhJTvBvChkU?network=mainnet" class="social-links">Trade</a></li>
+                        <li>XPMarket: <a href="https://xpmarket.com/token/TXRPL-rhGFAGHm996WLGYb9QRqx1rJhJTvBvChkU" class="social-links">Trade</a></li>
+                    </ul>
+                    <p>Connect your wallet and swap XRP for $TXRPL.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">Step 4: Hold $TXRPL</div>
+                <div class="accordion-content">
+                    <p>Store at least 3 million $TXRPL in your wallet to qualify for monthly silver giveaways. Follow <a href="https://x.com/texasxrpl" class="social-links">@texasxrpl</a> for updates.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="rewards">
         <h2>Silver Rewards</h2>
         <p>The reward loop delivers silver to $TXRPL holders, a shield against the system’s collapse. Hold 3M tokens to unlock monthly giveaways.</p>
@@ -287,8 +392,10 @@
         <h2>Trade $TXRPL</h2>
         <p>Claim your silver-backed freedom on XRPL DEX platforms.</p>
         <div class="dex-links">
-            <a href="https://dexscreener.com/xrpl/545852504c000000000000000000000000000000.rhgfaghm996wlgyb9qrqx1rjhjtvbvchku_xrp">Dexscreener</a>
             <a href="https://firstledger.net/token/rhGFAGHm996WLGYb9QRqx1rJhJTvBvChkU/545852504C000000000000000000000000000000">First Ledger</a>
+            <a href="https://dexscreener.com/xrpl/545852504c000000000000000000000000000000.rhgfaghm996wlgyb9qrqx1rjhjtvbvchku_xrp"><img src="images/dexscreener-logo.png" alt="Dexscreener Logo"></a>
+            <a href="https://xmagnetic.org/tokens/TXRPL+rhGFAGHm996WLGYb9QRqx1rJhJTvBvChkU?network=mainnet">XMagnetic</a>
+            <a href="https://xpmarket.com/token/TXRPL-rhGFAGHm996WLGYb9QRqx1rJhJTvBvChkU"><img src="images/xpmarket-logo.png" alt="XPMarket Logo"></a>
         </div>
     </section>
 
@@ -315,7 +422,37 @@
             <div class="quest-card">
                 <h3>Operation Vault Access</h3>
                 <p>Join the $TXRPL Telegram for updates.</p>
-                <a href="https://linktr.ee/TXRPL" class="cta-button">Complete Quest</a>
+                <a href="https://t.me/TXRPL" class="cta-button">Complete Quest</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-header">What is $TXRPL?</div>
+                <div class="accordion-content">
+                    <p>$TXRPL is a token on the XRP Ledger, created by MAGANON7 to reward holders with physical silver, empowering patriots to break free from fiat systems.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">How do I participate in the silver giveaway?</div>
+                <div class="accordion-content">
+                    <p>Hold at least 3 million $TXRPL in your XRPL wallet and follow <a href="https://x.com/texasxrpl" class="social-links">@texasxrpl</a> for giveaway announcements and winner details.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">Why silver?</div>
+                <div class="accordion-content">
+                    <p>Silver is the people’s money, a hedge against inflation and a symbol of freedom. $TXRPL uses silver to defy the fiat system and empower holders.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">Is $TXRPL secure?</div>
+                <div class="accordion-content">
+                    <p>Built on the XRP Ledger, $TXRPL leverages XRPL’s fast, secure, and decentralized blockchain. Always use trusted wallets and DEXs to trade.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -325,6 +462,7 @@
         <p>Connect with the #SilverSqueeze army.</p>
         <div class="social-links">
             <a href="https://x.com/texasxrpl">@texasxrpl</a>
+            <a href="https://t.me/TXRPL">Telegram</a>
             <a href="https://linktr.ee/TXRPL">Linktree</a>
         </div>
     </section>
@@ -337,23 +475,24 @@
         // Placeholder counters
         let silver = 0;
         let debt = 35000000000000;
-        let silverPrice = 30.00; // Placeholder
+        let silverPrice = 30.00;
         setInterval(() => {
-            silver += 10; // Placeholder
-            debt += 1000000; // Placeholder
-            silverPrice += 0.01; // Placeholder
+            silver += 10;
+            debt += 1000000;
+            silverPrice += 0.01;
             document.getElementById('silver-counter').textContent = `${silver} oz Distributed`;
             document.getElementById('debt-counter').textContent = `$${debt.toLocaleString()} Debt`;
             document.getElementById('silver-price').textContent = `$${silverPrice.toFixed(2)}/oz Silver`;
-            // Placeholder sound effect
-            // new Audio('beep.mp3').play(); // Add real audio file
+            // new Audio('images/beep.mp3').play();
         }, 5000);
 
-        // Placeholder for X feed decode
-        function decodeSignals() {
-            alert('Decoding @texasxrpl posts... Check X for the latest signals!');
-            // Future: Toggle CSS filter on embedded X feed
-        }
+        // Accordion toggle
+        document.querySelectorAll('.accordion-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const item = header.parentElement;
+                item.classList.toggle('active');
+            });
+        });
     </script>
 </body>
 </html>
